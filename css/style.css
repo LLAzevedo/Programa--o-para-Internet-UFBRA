@@ -1,34 +1,93 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&family=Roboto:wght@100;400;700&family=Yuji+Mai&display=swap');
-
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: "Roboto", sans-serif;
-    font-size: 12px;
-}
-
-body{
-    background-color: #111;
-}
-
 .container{
-    background-color: #EEE;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 300px;
+    width: 50%;
+    height: 100vh;
     text-align: center;
-    width: 30%;
+    align-items: center;
+    justify-content: center;
 }
 
 .container h1{
     padding: 10px;
-    font-size: 16px;
+    font-size: 32px;
+    font-weight: 500;
     color: #AAA;
 }
 
 .container p{
     color: #AAA;
-    margin: 10px;
+    margin: 10px 0;
+    font-size: 14px;
+    font-weight: 500;
 }
 
 .form-group{
-    background-color: green;
+    border-radius: 5px;
+    padding: 5px;
+    width: 100%;
+    font-size: 14px;
+}
+
+.form-group label{
+    display: block;
+    color: #AAA;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.form-group input{
+    margin-top: 5px;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+.form-group button{
+    width: 100%;
+    padding: 15px;
+    margin-top: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #DDD;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.form-group button:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.form-group p{
+    margin-top: 10px;
+}
+
+.form-group a{
+    color: #AAA;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.form-group .logo{
+    display: flex;
+    flex-direction: row;
+}
+
+.form-group .logo a{
+    border: 1px solid #AAA;
+    border-radius: 5px;
+    margin: 10px 5px;
+    padding: 5px;    
+}
+
+.form-group .logo a:hover{
+    opacity: 0.7;
+}
+
+.form-group .logo img{
+    width: 50%;
 }
