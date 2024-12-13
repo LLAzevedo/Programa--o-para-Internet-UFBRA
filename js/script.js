@@ -1,10 +1,9 @@
-const inputLogin = document.querySelector("#email");
-const inputPass = document.querySelector("#pass");
-const button = document.querySelector("#button");
+const login = document.getElementById('email');
+const senha = document.getElementById('pass');
 
-const validarUsuario = (event) => {
-    console.log(event.target);
-
+function validarUsuario()
+{
+    console.log(login.value + senha.value);
+    window.location.href = 
+    '../view/cadastro.html';
 }
-
-button.addEventListener('input', validarUsuario);
