@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-Commerce</title>
+    <title>Thermo Analyzer</title>
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/style.css">
     <script defer src="../js/script.js"></script>
@@ -13,12 +13,17 @@
         <h1 class="titulo">Thermo Analyzer</h1>
         <p id="paragrafo">Digite os dados para acessar a plataforma</p>
         <div class="form-group">
-            <form action="">
+            
                 <label for="email">E-mail:</label>
-                <input type="email" class="email" placeholder="Digite seu email">
+                <input type="email" id="email" placeholder="Digite seu email">
                 <label for="senha">Senha:</label>
-                <input type="password" class="pass" placeholder="Digite sua senha">
-                <button type="submit" class="button" disabled>Entrar</button>
+                <input type="password" id="pass" placeholder="Digite sua senha">
+                <!--
+                <div class="error" id="error">Usuário não autenticado</div>
+                <div class="success" id="success">Usuário autenticado</div>
+                -->
+                <button onclick="validarUsuario()">Entrar</button>
+                
                 <p>Crie uma conta <a href="cadastro.html">clicando aqui</a></p>
                 <p>ou acesse com...</p>
                 <div class="logo">
@@ -26,7 +31,7 @@
                     <a href=""><img src="../icons/google-white.svg" alt="icone github"></a>
                     <a href=""><img src="../icons/facebook-white.svg" alt="icone github"></a>
                 </div>
-            </form>
+            
         </div>
     </div>
 </body>
