@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    max-width: 300px;
+    max-width: 320px;
     width: 50%;
     height: 100vh;
     text-align: center;
@@ -12,15 +12,15 @@
 
 .container h1{
     padding: 10px;
-    font-size: 32px;
-    font-weight: 500;
+    font-size: 38px;
+    font-weight: 600;
     color: #AAA;
 }
 
 .container p{
     color: #AAA;
     margin: 10px 0;
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 500;
 }
 
@@ -67,7 +67,8 @@
     opacity: 1;
 }
 
-.form-group p{
+.form-group > p{
+    font-size: 14px;
     margin-top: 10px;
 }
 
@@ -97,9 +98,8 @@
     width: 50%;
 }
 
-.form-group .error{
-    visibility: hidden;
-    background-color: #f2240f;
+.form-group #info{
+    display: none;
     border: none;
     border-radius: 5px;
     margin: 10px 0;
@@ -109,14 +109,7 @@
     color: #FFF;
 }
 
-.form-group .success{
-    visibility: hidden;
-    background-color: #46ad28;
-    border: none;
-    border-radius: 5px;
-    margin: 10px 0;
-    padding: 15px;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: #FFF;
+hr{
+    border: 1px solid #222;
+    margin-top: 20px;
 }

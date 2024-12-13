@@ -11,27 +11,24 @@
 <body>
     <div class="container">
         <h1 class="titulo">Thermo Analyzer</h1>
-        <p id="paragrafo">Digite os dados para acessar a plataforma</p>
+        <p id="paragrafo">Análise de imagens termográficas</p>
         <div class="form-group">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" placeholder="Digite seu email">
+            <label for="senha">Senha:</label>
+            <input type="password" id="pass" placeholder="Digite sua senha">
             
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" placeholder="Digite seu email">
-                <label for="senha">Senha:</label>
-                <input type="password" id="pass" placeholder="Digite sua senha">
-                <!--
-                <div class="error" id="error">Usuário não autenticado</div>
-                <div class="success" id="success">Usuário autenticado</div>
-                -->
-                <button onclick="validarUsuario()">Entrar</button>
-                
-                <p>Crie uma conta <a href="cadastro.html">clicando aqui</a></p>
-                <p>ou acesse com...</p>
-                <div class="logo">
-                    <a href=""><img src="../icons/github-white.svg" alt="icone github"></a>
-                    <a href=""><img src="../icons/google-white.svg" alt="icone github"></a>
-                    <a href=""><img src="../icons/facebook-white.svg" alt="icone github"></a>
-                </div>
+            <div id="info"></div>
+            <button onclick="autenticarUsuario()">Entrar</button>
             
+            <p>Crie uma conta <a href="cadastro.html">clicando aqui</a></p>
+            <hr>
+            <p>ou acesse a plataforma com</p>
+            <div class="logo">
+                <a href=""><img src="../icons/github-white.svg" alt="icone github"></a>
+                <a href=""><img src="../icons/google-white.svg" alt="icone github"></a>
+                <a href=""><img src="../icons/facebook-white.svg" alt="icone github"></a>
+            </div>
         </div>
     </div>
 </body>
